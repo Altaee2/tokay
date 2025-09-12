@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الوكيل تقي</title>
+    <meta name="description" content="صفحة عصرية أنيقة للتعريف بالوكيل الرسمي لبوت متجر السلطان.">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="tokay3.png">
+    <meta name="description" content="موقع تعريفي للوكيل تقـ𓃮ـي">
+    <meta property="og:title" content="الوكيل تقـ𓃮ـي">
+    <meta property="og:description" content="موقع تعريفي للوكيل تقـ𓃮ـي">
+    <meta property="og:url" content="https://www.takey.free.nf">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="tokay3.png">
+    <style>
+         :root {
+            --primary: #8b5cf6;
+            /* بنفسجي أرجواني عميق */
+            --secondary: #14b8a6;
+            /* أخضر فيروزي */
+            --bg: #080b0e;
+            /* أسود داكن جداً */
+            --text: #f8fafc;
+            /* أبيض نقي */
+            --muted: #94a3b8;
+            /* رمادي فاتح */
+            --card: #12161a;
+            /* رمادي داكن */
+            --radius: 18px;
+        }
+        
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Cairo', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        /* Navbar */
+        
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: rgba(18, 22, 26, 0.9);
+            /* استخدام لون البطاقة مع شفافية */
+            backdrop-filter: blur(10px);
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+        
+        header .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--text);
+        }
+        
+        header .brand img {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+        }
+        /* Hero */
+        
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 4rem 1rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--text);
+            text-align: center;
+            gap: 2rem;
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .hero-text h1 {
+            margin: 0;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            color: #fff;
+        }
+        
+        .hero-text p {
+            margin: 1rem 0 1.5rem;
+            color: var(--text);
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            line-height: 1.8;
+            max-width: 700px;
+        }
+        
+        .hero-text .btn {
+            background: var(--text);
+            color: var(--bg);
+            padding: 12px 24px;
+            border-radius: var(--radius);
+            font-weight: 600;
+            transition: 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .hero-text .btn:hover {
+            background: var(--muted);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .hero-img {
+            max-width: 400px;
+            animation: slideIn 1s ease-in-out;
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        .hero-img img {
+            width: 100%;
+            border-radius: var(--radius);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        /* Sections */
+        
+        section {
+            padding: 4rem 1rem;
+            text-align: center;
+            background: var(--bg);
+            color: var(--text);
+        }
+        
+        section h2 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            margin-bottom: 20px;
+            color: var(--primary);
+            position: relative;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        
+        section h3 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            margin-bottom: 20px;
+            color: #000000;
+            position: relative;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        
+        section h2::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--secondary);
+            border-radius: 5px;
+        }
+        
+        section h3::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 80px;
+            height: 3px;
+            background: var(--secondary);
+            border-radius: 5px;
+        }
+        /* About */
+        
+        .about {
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
+            color: #fff;
+            padding: 60px 20px;
+            border-radius: 20px;
+            margin: 30px auto;
+            max-width: 900px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .about h2 {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .about h2 i {
+            margin-left: 10px;
+            color: #ffdf5d;
+        }
+        
+        .about p {
+            font-size: 1.2rem;
+            margin: 15px 0;
+            line-height: 1.8;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 12px 15px;
+            border-radius: 12px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        
+        .about p:hover {
+            transform: translateY(-4px);
+            background: black;
+        }
+        
+        .about p i {
+            margin-left: 8px;
+            color: #ffdf5d;
+            font-size: 1.3rem;
+        }
+        
+        .highlight {
+            color: #ffdf5d;
+            font-weight: bold;
+        }
+        /* Services */
+        
+        .services,
+        .articles,
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .card {
+            background: var(--card);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .card .icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        .card h3 {
+            margin: 0 0 10px;
+            font-size: 1.25rem;
+            color: var(--text);
+        }
+        
+        .card p {
+            margin: 0;
+            color: var(--muted);
+        }
+        /* Articles Section */
+        
+        .article-card {
+            text-align: start;
+            animation: slideUp 0.6s ease-out;
+        }
+        
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        .article-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+        }
+        
+        .article-card h3 {
+            margin-top: 0;
+            font-size: 1.25rem;
+            color: #f8ff00;
+        }
+        
+        .article-card h33 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color: #297b53;
+        }
+        
+        section h33::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 180px;
+            height: 3px;
+            background: var(--secondary);
+            border-radius: 5px;
+        }
+        
+        section h33 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            margin-bottom: 20px;
+            color: #000000;
+            position: relative;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        
+        .article-card p {
+            color: white;
+        }
+        
+        .article-card a {
+            color: blue;
+            font-size: 16px;
+            transition: background-color 0.4s ease, transform 0.4s ease;
+            font-weight: 600;
+            font-weight: bold;
+            padding: 12px 25px;
+            margin-top: 2rem;
+            text-decoration: none;
+            /* إزالة الخط تحت الرابط */
+            border-radius: 50px;
+            /* حواف مستديرة للزر */
+            display: inline-block;
+            background-color: #f8ff00;
+            /* لون زر اقرأ المزيد */
+        }
+        
+        .article-card a:hover {
+            background-color: #00060c;
+            /* يتغير لون الزر عند الهوفر */
+            transform: scale(1.05);
+            /* الزر يكبر قليلاً */
+        }
+        /* Portfolio/Works */
+        
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--radius);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            animation: scaleIn 0.5s ease-out;
+        }
+        
+        .article-card a1 {
+            color: #297b53;
+            font-size: 16px;
+            transition: background-color 0.4s ease, transform 0.4s ease;
+            font-weight: 600;
+            font-weight: bold;
+            padding: 12px 25px;
+            margin-top: 2rem;
+            text-decoration: none;
+            /* إزالة الخط تحت الرابط */
+            border-radius: 50px;
+            /* حواف مستديرة للزر */
+            display: inline-block;
+            background-color: #f8ff00;
+            /* لون زر اقرأ المزيد */
+        }
+        
+        .article-card a1:hover {
+            color: #f8ff00;
+            background-color: #297b53;
+            /* يتغير لون الزر عند الهوفر */
+            transform: scale(1.05);
+            /* الزر يكبر قليلاً */
+        }
+        /* Portfolio/Works */
+        
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--radius);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            animation: scaleIn 0.5s ease-out;
+        }
+        
+        @keyframes scaleIn {
+            from {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        .portfolio-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .portfolio-item-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            text-align: center;
+        }
+        
+        .portfolio-item:hover .portfolio-item-overlay {
+            opacity: 1;
+        }
+        
+        .portfolio-item-overlay h3 {
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+        
+        .portfolio-item-overlay p {
+            color: var(--muted);
+        }
+        
+        .portfolio-item-overlay .btn-link {
+            background: var(--text);
+            color: var(--bg);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: background 0.3s, color 0.3s;
+        }
+        
+        .portfolio-item-overlay .btn-link:hover {
+            background: var(--primary);
+            color: var(--text);
+        }
+        /* Contact */
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-card {
+            background-color: var(--card);
+            border-radius: var(--radius);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .contact-card h4 {
+            color: var(--text);
+        }
+        
+        .socials {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .socials a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: var(--muted);
+            transition: transform 0.3s ease;
+        }
+        
+        .socials a:hover {
+            transform: translateY(-5px);
+        }
+        
+        .socials a .icon-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: var(--bg);
+            color: var(--primary);
+            font-size: 1.8em;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 8px;
+        }
+        
+        .socials a:hover .icon-wrapper {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transform: scale(1.1);
+        }
+        
+        .socials a.whatsapp:hover .icon-wrapper {
+            background-color: #25D366;
+            color: #fff;
+        }
+        
+        .socials a.telegram:hover .icon-wrapper {
+            background-color: #0088cc;
+            color: #fff;
+        }
+        
+        .socials a.facebook:hover .icon-wrapper {
+            background-color: #3b5998;
+            color: #fff;
+        }
+        
+        .socials a.instagram:hover .icon-wrapper {
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            color: #fff;
+        }
+        
+        .socials a span {
+            font-size: 0.9em;
+            color: var(--muted);
+            transition: color 0.3s ease;
+        }
+        
+        .socials a:hover span {
+            color: var(--text);
+        }
+        
+        .map iframe {
+            width: 100%;
+            height: 300px;
+            border-radius: var(--radius);
+            border: 0;
+            margin-top: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        /* Footer */
+        
+        footer {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 2rem 1rem;
+            text-align: center;
+            font-size: 0.875rem;
+        }
+        
+        footer a {
+            color: #fff;
+            margin: 0 6px;
+            transition: color 0.3s;
+        }
+        
+        footer a:hover {
+            color: var(--secondary);
+        }
+        /* Responsive */
+        
+        @media (min-width: 768px) {
+            .hero {
+                flex-direction: row;
+                text-align: right;
+                gap: 4rem;
+                padding: 6rem 1rem;
+            }
+            .hero-text {
+                flex: 1;
+            }
+            .hero-img {
+                flex: 1;
+                max-width: none;
+            }
+            .about p {
+                padding: 0 10%;
+            }
+            .services,
+            .articles,
+            .portfolio {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .contact-info {
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            header nav {
+                display: none;
+            }
+            section {
+                padding: 2rem 1rem;
+            }
+            .hero {
+                padding: 3rem 1rem;
+            }
+        }
+        
+        header .brand:hover {
+            cursor: pointer;
+        }
+        
+        header .brand:hover strong {
+            color: var(--primary);
+            transform: translateY(2px);
+            /* تحريك النص قليلاً لأسفل */
+            transition: all 0.3s ease;
+        }
+        
+        .hero-text .btn:hover {
+            background-color: #0088cc;
+            /* لون تيليجرام */
+            color: #fff;
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            animation: pulse-telegram 1.5s infinite;
+            /* تطبيق التأثير النبضي */
+        }
+        
+        @keyframes pulse-telegram {
+            0% {
+                transform: scale(1.05);
+            }
+            50% {
+                transform: scale(1.08);
+                /* يزيد حجم الزر قليلاً في منتصف النبضة */
+            }
+            100% {
+                transform: scale(1.05);
+            }
+        }
+        /* Container for the 3D flip effect */
+        
+        .hero-img-container {
+            perspective: 1000px;
+            /* Specifies the perspective for the 3D space */
+            max-width: 400px;
+            width: 100%;
+            height: 300px;
+            /* Set a fixed height for the container */
+            animation: slideIn 1s ease-in-out;
+            /* Keep original animation */
+        }
+        /* The card itself, responsible for flipping */
+        
+        .hero-img-card {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            /* Smooth flip animation */
+            transform-style: preserve-3d;
+            /* Keep children in 3D space */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            /* Shadow for the card */
+            border-radius: var(--radius);
+            /* Apply border-radius to the card */
+        }
+        /* On hover, flip the card */
+        
+        .hero-img-container:hover .hero-img-card {
+            transform: rotateY(180deg);
+        }
+        /* Common styles for front and back faces */
+        
+        .hero-img-front,
+        .hero-img-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            /* Hide the back face during rotation */
+            backface-visibility: hidden;
+            border-radius: var(--radius);
+            overflow: hidden;
+            /* Ensure image/content stays within rounded corners */
+        }
+        
+        .hero-img-front img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Cover the entire area */
+            border-radius: var(--radius);
+        }
+        
+        .hero-img-back {
+            background-color: var(--card);
+            /* Background for the back face */
+            color: var(--text);
+            transform: rotateY(180deg);
+            /* Initially rotate the back face to hide it */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            box-sizing: border-box;
+            /* Include padding in height calculation */
+        }
+        
+        .hero-img-back h3 {
+            margin-top: 0;
+            font-size: 1.8rem;
+            color: var(--primary);
+        }
+        
+        .hero-img-back p {
+            font-size: 1.1rem;
+            color: var(--muted);
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero-img-back .btn-small {
+            background: var(--primary);
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+        
+        .hero-img-back .btn-small:hover {
+            background: var(--secondary);
+        }
+        /* Adjustments for responsiveness if needed */
+        
+        @media (max-width: 767px) {
+            .hero-img-container {
+                height: 250px;
+                /* Smaller height for mobile */
+            }
+        }
+        
+        .contact-card {
+            background-color: #23272a;
+            /* لون بطاقة الدفع أغمق قليلاً */
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+            /* ظل أقوى */
+            padding: 30px;
+            text-align: center;
+            width: 90%;
+            max-width: 350px;
+            /* عرض مناسب للبطاقة */
+            margin: auto;
+            /* يجعلها بالمنتصف */
+            box-sizing: border-box;
+        }
+        
+        .contact-card h4 {
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-size: 24px;
+            color: #ffffff;
+            border-bottom: 2px solid #4a4d50;
+            /* خط فاصل تحت العنوان */
+            padding-bottom: 15px;
+        }
+        /* تنسيقات طرق الدفع */
+        
+        .payment-methods {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* عمودين متساويين */
+            gap: 20px;
+        }
+        
+        .payment-methods a {
+            text-decoration: none;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #2f3439;
+            /* لون خلفية الأيقونة */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .icon-wrapper {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .payment-methods a i {
+            font-size: 24px;
+            color: #ffffff;
+        }
+        
+        .payment-methods a span {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        /* تأثير الـ Hover */
+        
+        .payment-methods a:hover {
+            transform: translateY(-5px);
+            background-color: #3b4045;
+        }
+        /* تنسيقات الألوان المخصصة */
+        
+        .mastercard .icon-wrapper {
+            background-color: #ff6f00;
+            /* لون ماستر كارد */
+        }
+        
+        .zaincash .icon-wrapper {
+            background-color: #1a7e44;
+            /* لون زين كاش */
+        }
+        
+        .asiacell .icon-wrapper {
+            background-color: #e92323;
+            /* لون اسياسيل */
+        }
+        
+        .atheer .icon-wrapper {
+            background-color: #551a8b;
+            /* لون اثير */
+        }
+        /* تنسيقات الأجهزة الصغيرة */
+        
+        @media (max-width: 480px) {
+            .contact-card {
+                padding: 20px;
+            }
+            .contact-card h4 {
+                font-size: 20px;
+            }
+            .payment-methods {
+                grid-template-columns: 1fr;
+                /* عمود واحد فقط على الشاشات الصغيرة */
+            }
+            .payment-methods a {
+                flex-direction: row;
+                gap: 15px;
+                padding: 10px;
+            }
+            .icon-wrapper {
+                margin-bottom: 0;
+            }
+        }
+        /* تنسيقات القائمة */
+        
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .space-x-6>*+* {
+            margin-left: 1.5rem;
+            /* 24px */
+        }
+        
+        .space-x-reverse>*+* {
+            margin-right: 1.5rem;
+            /* 24px */
+            margin-left: 0;
+        }
+        
+        .font-medium {
+            font-weight: 500;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #b0b0b0;
+            /* لون رمادي فاتح للنصوص */
+            transition: color 0.3s ease;
+        }
+        
+        a:hover {
+            color: #7289da;
+            /* لون أزرق عند التحويم */
+        }
+        /* تنسيقات الأجهزة الصغيرة */
+        
+        @media (max-width: 768px) {
+            .md\\:mt-0 {
+                margin-top: 0;
+            }
+            .md\\:space-x-6>*+* {
+                margin-left: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <img src="tokay.jpg" alt="logo">
+            <strong>  الوكيل تقـ𓃮ـي</strong>
+        </div>
+        <div class="text-3xl font-extrabold text-blue-700">
+        </div>
+        <ul class="flex space-x-6 space-x-reverse mt-4 md:mt-0 font-medium">
+            <ul class="flex space-x-6 space-x-reverse mt-4 md:mt-0 font-medium">
+                <li><a href="#about">انا</a></li>
+                <li><a href="#services">الخدمات</a></li>
+                <li><a href="#articles">المقالات</a></li>
+                <li><a href="#payment">طرق الدفع</a></li>
+                <li><a href="#contact">تواصل معي</a></li>
+            </ul>
+            </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>اهلا بك مع الوكيل تقـ𓃮ـي</h1>
+                <p>الوكيل المعتمد لدى متجر السلطان ومالك مكتبة السراج، هنا لتقديم أفضل العروض والخدمات التي تلبي احتياجاتك بكفاءة عالية</p>
+                <a href="https://t.me/FB_IT" target="_blank" class="btn"><i class="fa-brands fa-telegram"></i> تواصل الآن عبر التيليجرام</a>
+            </div>
+            <div class="hero-img-container">
+                <div class="hero-img-card">
+                    <div class="hero-img-front">
+                        <img src="tokay.jpg" alt="hero">
+                    </div>
+                    <div class="hero-img-back">
+                        <h3>أهلاً بك!</h3>
+                        <p>سررنا بزيارتك لصفحة الوكيل تقـ𓃮ـي.</p>
+                        <a href="#contact" class="btn-small">تواصل</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h3><i class="fa-solid fa-user"></i> من أنا</h3>
+
+                <p><i class="fa-solid fa-star"></i> أنا الوكيل <span class="highlight">تقـ𓃮ـي</span>، المعتمد في <strong>متجر السلطان الاستثماري</strong>! مهمتي هي تزويدكم بأفضل الفرص لزيادة أرباحكم من خلال بيع النقاط وتفعيل العدادات للمستثمرين، بالإضافة
+                    إلى تنظيم مسابقات حماسية عبر البوت.</p>
+
+                <p><i class="fa-solid fa-clock"></i> أنا معكم <strong>24/7</strong> لخدمتكم!</p>
+
+                <p><i class="fa-solid fa-money-check-dollar"></i> وسائل الدفع متوفرة دائمًا وبطرق متعددة.</p>
+
+                <p><i class="fa-solid fa-coins"></i> لشراء النقاط: احصل على <strong>نقاط ساتوشي</strong> بكل سهولة لزيادة دخلك وتطوير العداد.</p>
+
+                <p><i class="fa-solid fa-hand-holding-dollar"></i> لسحب الأرباح: استمتع بسحب أرباحك بسرعة وسهولة عبر قسم <strong>سحب الأرباح</strong> في البوت.</p>
+            </div>
+        </section>
+        <section id="services">
+            <div class="container">
+                <h2>خدماتي</h2>
+                <div class="services">
+                    <div class="card">
+                        <i class="fa-solid fa-shopping-cart icon"></i>
+                        <h3> إتمام عمليات الشراء بسرعة وأمان</h3>
+                        <p>نقدم لك خدمة شراء بشكل آمن وسريع، مع ضمان حماية كاملة لخصوصيتك</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-headset icon"></i>
+                        <h3>دعم فني</h3>
+                        <p>دعم فني سريع لحل جميع مشاكلك بكل سهولة. نحن هنا لمساعدتك في أي وقت!</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-shield-alt icon"></i>
+                        <h3>ضمان أمان</h3>
+                        <p>تجربة موثوقة مع حماية كاملة لحقوق العميل.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="articles">
+            <div class="container">
+                <h2>مقالات مفيدة</h2>
+                <div class="articles">
+                    <div class="card article-card">
+                        <img src="tokay3.png" alt="Article 1">
+                        <h3>قناة الوكيل تقـ𓃮ـي</h3>
+                        <p>"قناة الوكيل تقـ𓃮ـي" تقدم لك فرص استثمارية مميزة عبر شراء النقاط الساتوشي واستخدامها لتفعيل العدادات وزيادة الدخل بطريقة آمنة.</p>
+                        <a href="channel.html">اقرأ المزيد</a>
+                    </div>
+                    <div class="card article-card">
+                        <img src="serag1.png" alt="Article 2" class="card-image" />
+                        <div class="card-content">
+                            <h3>قناه مكتبة السراج</h3>
+                            <p>
+                                قناه مكتبه السراج توفر مستلزمات قرطاسية عالية الجودة تلبي احتياجاتك الدراسية والمهنية بكل احترافية.
+                            </p>
+                            <div style="text-align: center; margin-top: 2rem;">
+                                <a href="serag.html" style="
+          color: black;
+          font-size: 16px;
+          transition: background-color 0.4s ease, transform 0.4s ease;
+          font-weight: 600;
+          font-weight: bold;
+          padding: 12px 25px;
+          text-decoration: none;
+          border-radius: 50px;
+          display: inline-block;
+          background-color: #297b53;
+        ">اقرأ المزيد</a
+      >
+    </div>
+  </div>
+</div>
+</div>
+             
+        </section>
+
+       <section id="payment">
+  <div class="contact-card">
+        <h4>طرق الدفع</h4>
+        <div class="payment-methods">
+            <a href="https://t.me/FB_IT" class="mastercard">
+                <div class="icon-wrapper">
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                </div>
+                <span>ماستر كارد</span>
+            </a>
+                                <a href="https://t.me/FB_IT" class="zaincash">
+                                    <div class="icon-wrapper">
+                                        <i class="fa-solid fa-wallet"></i>
+                                    </div>
+                                    <span>زين كاش</span>
+                                </a>
+                                <a href="https://t.me/FB_IT" class="asiacell">
+                                    <div class="icon-wrapper">
+                                        <i class="fa-solid fa-mobile-screen"></i>
+                                    </div>
+                                    <span>رصيد اسياسيل</span>
+                                </a>
+                                <a href="https://t.me/FB_IT" class="atheer">
+                                    <div class="icon-wrapper">
+                                        <i class="fa-solid fa-mobile-screen-button"></i>
+                                    </div>
+                                    <span>رصيد اثير</span>
+                                </a>
+                            </div>
+                        </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>تواصل معنا</h2>
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h4>مواقع التواصل</h4>
+                        <div class="socials">
+
+                            <a href="https://t.me/FB_IT" target="_blank" class="telegram">
+                                <div class="icon-wrapper">
+                                    <i class="fa-brands fa-telegram"></i>
+                                </div>
+                                <span>تليجرام شخصي</span>
+                            </a>
+                            <a href="https://t.me/ssooci" target="_blank" class="telegram">
+                                <div class="icon-wrapper">
+                                    <i class="fa-brands fa-telegram"></i>
+                                </div>
+                                <span> مكتبة السراج</span>
+                            </a>
+                            <a href="https://www.instagram.com/s.ooci?igsh=MXVrMXI4NXB5aGpiZA==" target="_blank" class="instagram">
+                                <div class="icon-wrapper">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                                <span>مكتبة السراج</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>© جميع الحقوق تابعة لـ تقـ𓃮ـي
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
