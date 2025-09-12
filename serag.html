@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتبة السراج</title>
+
+    <!-- أيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        /* ===== إعدادات عامة وخلفية متدرجة داكنة ===== */
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Cairo", sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            color: #eee;
+            direction: rtl;
+            overflow-x: hidden;
+        }
+        
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        /* ===== زر الرجوع ===== */
+        
+        .back-btn {
+            position: absolute;
+            /* يثبت فقط بالفوق ويختفي عند النزول */
+            top: 20px;
+            left: 20px;
+            color: #00eaff;
+            border: 2px solid #00eaff;
+            padding: 12px 20px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: bold;
+            backdrop-filter: blur(5px);
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 0 12px #00eaff;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn i {
+            margin-left: 6px;
+        }
+        
+        .back-btn:hover {
+            background: #00eaff;
+            color: #0f0c29;
+            transform: scale(1.08);
+            box-shadow: 0 0 20px #00eaff;
+        }
+        /* ===== محتوى الصفحة ===== */
+        
+        .container {
+            max-width: 900px;
+            margin: 130px auto 60px;
+            padding: 40px 25px;
+            text-align: center;
+            animation: fadeInUp 1.2s ease;
+        }
+        /* ===== صورة أعلى المقال ===== */
+        
+        .top-image {
+            width: 100%;
+            max-width: 750px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            border: 4px solid transparent;
+            background: linear-gradient(45deg, #00eaff, #9b5cff) border-box;
+            -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: destination-out;
+            mask-composite: exclude;
+            box-shadow: 0 0 20px rgba(0, 234, 255, 0.4);
+            animation: zoomIn 1.2s ease;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+        
+        .top-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 35px rgba(0, 234, 255, 0.7);
+        }
+        /* ===== العنوان الرئيسي ===== */
+        
+        h1 {
+            font-size: 3rem;
+            color: #9b5cff;
+            margin-bottom: 40px;
+            text-shadow: 0 0 20px #9b5cff;
+        }
+        
+        h1 i {
+            margin-left: 12px;
+        }
+        /* ===== فقرات النص ===== */
+        
+        p {
+            font-size: 1.25rem;
+            line-height: 2;
+            margin: 25px auto;
+            padding: 20px;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(155, 92, 255, 0.4);
+            box-shadow: 0 0 15px rgba(155, 92, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        p:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 0 25px rgba(155, 92, 255, 0.6);
+            border-color: rgba(155, 92, 255, 0.7);
+        }
+        
+        p i {
+            margin-left: 8px;
+            color: #00eaff;
+            font-size: 1.3rem;
+        }
+        /* ===== زر قناة التلجرام ===== */
+        
+        .telegram-btn {
+            display: inline-block;
+            margin-top: 40px;
+            font-size: 1.4rem;
+            color: #00eaff;
+            border: 2px solid #00eaff;
+            padding: 14px 36px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 0 15px #00eaff;
+            backdrop-filter: blur(5px);
+            background: rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .telegram-btn i {
+            margin-left: 10px;
+        }
+        
+        .telegram-btn:hover {
+            background: #00eaff;
+            color: #0f0c29;
+            transform: scale(1.08);
+            box-shadow: 0 0 25px #00eaff;
+        }
+        /* ===== أنيميشن ===== */
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- زر الرجوع -->
+    <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> رجوع</a>
+
+    <div class="container">
+        <!-- صورة أعلى المقال (ضع مسار الصورة الصحيح) -->
+
+
+        <h1><i class="fa-solid fa-book-open"></i> مكتبة السراج</h1>
+
+        <p><i class="fa-solid fa-pen-nib"></i> هي وجهتك المثالية للحصول على مستلزمات القرطاسية عالية الجودة التي تلبي جميع احتياجاتك الدراسية والمهنية. نحن نوفر لك مجموعة متنوعة من المنتجات المكتبية التي تساعدك في تحقيق النجاح في عملك ودراستك. من الأوراق
+            الممتازة، الأقلام، وحتى الأدوات المكتبية الأخرى، نحن نعمل جاهدين لتوفير كل ما تحتاجه بأسعار مناسبة وبجودة عالية.</p>
+
+        <p><i class="fa-solid fa-lightbulb"></i> مكتبتنا ليست فقط متجرًا لشراء القرطاسية، بل هي مكان يمكنك من خلاله الحصول على كل ما يعزز من إنتاجيتك ويجعل حياتك اليومية أسهل وأكثر تنظيمًا. نقدم لك أيضًا أفضل النصائح لاختيار الأدوات التي تتناسب مع احتياجاتك
+            المختلفة.</p>
+
+        <p><i class="fa-solid fa-award"></i> نحن في "مكتبة السراج القرطاسية" نؤمن بأن الجودة هي الأساس، لذلك نحرص على تقديم منتجات عالية الجودة تتناسب مع كافة متطلباتك المكتبية، سواء كنت طالبًا في حاجة إلى أدوات مدرسية أو محترفًا يبحث عن مستلزمات مكتبية
+            للعمل.</p>
+
+        <!-- زر قناة التلجرام -->
+        <a href="https://t.me/S_OOOCI" target="_blank" class="telegram-btn">
+            <i class="fa-brands fa-telegram"></i> دخول قناة التلجرام
+        </a>
+    </div>
+
+</body>
+
+</html>
