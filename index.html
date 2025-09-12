@@ -18,7 +18,7 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="tokay3.png">
     <style>
-         :root {
+        :root {
             --primary: #8b5cf6;
             /* بنفسجي أرجواني عميق */
             --secondary: #14b8a6;
@@ -33,12 +33,12 @@
             /* رمادي داكن */
             --radius: 18px;
         }
-        
+
         * {
             box-sizing: border-box;
             scroll-behavior: smooth;
         }
-        
+
         body {
             margin: 0;
             font-family: 'Cairo', sans-serif;
@@ -46,19 +46,20 @@
             color: var(--text);
             line-height: 1.6;
         }
-        
+
         a {
             text-decoration: none;
             color: inherit;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 1rem;
         }
+
         /* Navbar */
-        
+
         header {
             position: sticky;
             top: 0;
@@ -73,21 +74,22 @@
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
             transition: all 0.3s ease-in-out;
         }
-        
+
         header .brand {
             display: flex;
             align-items: center;
             gap: 12px;
             color: var(--text);
         }
-        
+
         header .brand img {
             width: 52px;
             height: 52px;
             border-radius: 50%;
         }
+
         /* Hero */
-        
+
         .hero {
             display: flex;
             flex-direction: column;
@@ -99,7 +101,7 @@
             gap: 2rem;
             animation: fadeIn 1s ease-in-out;
         }
-        
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -108,14 +110,14 @@
                 opacity: 1;
             }
         }
-        
+
         .hero-text h1 {
             margin: 0;
             font-size: clamp(2rem, 5vw, 3.5rem);
             font-weight: 800;
             color: #fff;
         }
-        
+
         .hero-text p {
             margin: 1rem 0 1.5rem;
             color: var(--text);
@@ -123,7 +125,7 @@
             line-height: 1.8;
             max-width: 700px;
         }
-        
+
         .hero-text .btn {
             background: var(--text);
             color: var(--bg);
@@ -136,18 +138,18 @@
             gap: 8px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
-        
+
         .hero-text .btn:hover {
             background: var(--muted);
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
         }
-        
+
         .hero-img {
             max-width: 400px;
             animation: slideIn 1s ease-in-out;
         }
-        
+
         @keyframes slideIn {
             from {
                 transform: translateY(20px);
@@ -158,21 +160,22 @@
                 opacity: 1;
             }
         }
-        
+
         .hero-img img {
             width: 100%;
             border-radius: var(--radius);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
+
         /* Sections */
-        
+
         section {
             padding: 4rem 1rem;
             text-align: center;
             background: var(--bg);
             color: var(--text);
         }
-        
+
         section h2 {
             font-size: clamp(1.75rem, 4vw, 2.5rem);
             margin-bottom: 20px;
@@ -181,7 +184,7 @@
             padding-bottom: 10px;
             display: inline-block;
         }
-        
+
         section h3 {
             font-size: clamp(1.75rem, 4vw, 2.5rem);
             margin-bottom: 20px;
@@ -190,7 +193,7 @@
             padding-bottom: 10px;
             display: inline-block;
         }
-        
+
         section h2::after {
             content: '';
             position: absolute;
@@ -202,7 +205,7 @@
             background: var(--secondary);
             border-radius: 5px;
         }
-        
+
         section h3::after {
             content: '';
             position: absolute;
@@ -214,8 +217,9 @@
             background: var(--secondary);
             border-radius: 5px;
         }
+
         /* About */
-        
+
         .about {
             background: linear-gradient(135deg, #4e73df, #1cc88a);
             color: #fff;
@@ -225,19 +229,19 @@
             max-width: 900px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
-        
+
         .about h2 {
             text-align: center;
             font-size: 2.2rem;
             margin-bottom: 30px;
             position: relative;
         }
-        
+
         .about h2 i {
             margin-left: 10px;
             color: #ffdf5d;
         }
-        
+
         .about p {
             font-size: 1.2rem;
             margin: 15px 0;
@@ -247,24 +251,25 @@
             border-radius: 12px;
             transition: transform 0.3s ease, background 0.3s ease;
         }
-        
+
         .about p:hover {
             transform: translateY(-4px);
             background: black;
         }
-        
+
         .about p i {
             margin-left: 8px;
             color: #ffdf5d;
             font-size: 1.3rem;
         }
-        
+
         .highlight {
             color: #ffdf5d;
             font-weight: bold;
         }
+
         /* Services */
-        
+
         .services,
         .articles,
         .portfolio {
@@ -273,7 +278,7 @@
             gap: 2rem;
             margin-top: 2rem;
         }
-        
+
         .card {
             background: var(--card);
             padding: 2rem;
@@ -288,19 +293,19 @@
             cursor: pointer;
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
-        
+
         .card:hover {
             transform: translateY(-15px);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
-        
+
         .card .icon {
             font-size: 3rem;
             color: var(--primary);
             margin-bottom: 1rem;
             animation: pulse 2s infinite;
         }
-        
+
         @keyframes pulse {
             0% {
                 transform: scale(1);
@@ -312,24 +317,25 @@
                 transform: scale(1);
             }
         }
-        
+
         .card h3 {
             margin: 0 0 10px;
             font-size: 1.25rem;
             color: var(--text);
         }
-        
+
         .card p {
             margin: 0;
             color: var(--muted);
         }
+
         /* Articles Section */
-        
+
         .article-card {
             text-align: start;
             animation: slideUp 0.6s ease-out;
         }
-        
+
         @keyframes slideUp {
             from {
                 transform: translateY(20px);
@@ -340,7 +346,7 @@
                 opacity: 1;
             }
         }
-        
+
         .article-card img {
             width: 100%;
             height: 200px;
@@ -348,19 +354,19 @@
             border-radius: 12px;
             margin-bottom: 1rem;
         }
-        
+
         .article-card h3 {
             margin-top: 0;
             font-size: 1.25rem;
             color: #f8ff00;
         }
-        
+
         .article-card h33 {
             margin-top: 0;
             font-size: 1.5rem;
             color: #297b53;
         }
-        
+
         section h33::after {
             content: '';
             position: absolute;
@@ -372,7 +378,7 @@
             background: var(--secondary);
             border-radius: 5px;
         }
-        
+
         section h33 {
             font-size: clamp(1.75rem, 4vw, 2.5rem);
             margin-bottom: 20px;
@@ -381,11 +387,11 @@
             padding-bottom: 10px;
             display: inline-block;
         }
-        
+
         .article-card p {
             color: white;
         }
-        
+
         .article-card a {
             color: blue;
             font-size: 16px;
@@ -402,15 +408,16 @@
             background-color: #f8ff00;
             /* لون زر اقرأ المزيد */
         }
-        
+
         .article-card a:hover {
             background-color: #00060c;
             /* يتغير لون الزر عند الهوفر */
             transform: scale(1.05);
             /* الزر يكبر قليلاً */
         }
+
         /* Portfolio/Works */
-        
+
         .portfolio-item {
             position: relative;
             overflow: hidden;
@@ -418,7 +425,7 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             animation: scaleIn 0.5s ease-out;
         }
-        
+
         .article-card a1 {
             color: #297b53;
             font-size: 16px;
@@ -435,7 +442,7 @@
             background-color: #f8ff00;
             /* لون زر اقرأ المزيد */
         }
-        
+
         .article-card a1:hover {
             color: #f8ff00;
             background-color: #297b53;
@@ -443,8 +450,9 @@
             transform: scale(1.05);
             /* الزر يكبر قليلاً */
         }
+
         /* Portfolio/Works */
-        
+
         .portfolio-item {
             position: relative;
             overflow: hidden;
@@ -452,7 +460,7 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             animation: scaleIn 0.5s ease-out;
         }
-        
+
         @keyframes scaleIn {
             from {
                 transform: scale(0.9);
@@ -463,18 +471,18 @@
                 opacity: 1;
             }
         }
-        
+
         .portfolio-item img {
             width: 100%;
             height: 250px;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
-        
+
         .portfolio-item:hover img {
             transform: scale(1.1);
         }
-        
+
         .portfolio-item-overlay {
             position: absolute;
             top: 0;
@@ -491,20 +499,20 @@
             transition: opacity 0.5s ease;
             text-align: center;
         }
-        
+
         .portfolio-item:hover .portfolio-item-overlay {
             opacity: 1;
         }
-        
+
         .portfolio-item-overlay h3 {
             margin-bottom: 0.5rem;
             color: #fff;
         }
-        
+
         .portfolio-item-overlay p {
             color: var(--muted);
         }
-        
+
         .portfolio-item-overlay .btn-link {
             background: var(--text);
             color: var(--bg);
@@ -514,13 +522,14 @@
             margin-top: 1rem;
             transition: background 0.3s, color 0.3s;
         }
-        
+
         .portfolio-item-overlay .btn-link:hover {
             background: var(--primary);
             color: var(--text);
         }
+
         /* Contact */
-        
+
         .contact-info {
             display: flex;
             flex-direction: column;
@@ -528,7 +537,7 @@
             gap: 2rem;
             margin-top: 2rem;
         }
-        
+
         .contact-card {
             background-color: var(--card);
             border-radius: var(--radius);
@@ -539,11 +548,11 @@
             max-width: 400px;
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
-        
+
         .contact-card h4 {
             color: var(--text);
         }
-        
+
         .socials {
             display: flex;
             flex-wrap: wrap;
@@ -551,7 +560,7 @@
             gap: 1.5rem;
             margin-top: 1.5rem;
         }
-        
+
         .socials a {
             display: flex;
             flex-direction: column;
@@ -560,11 +569,11 @@
             color: var(--muted);
             transition: transform 0.3s ease;
         }
-        
+
         .socials a:hover {
             transform: translateY(-5px);
         }
-        
+
         .socials a .icon-wrapper {
             display: flex;
             justify-content: center;
@@ -579,42 +588,42 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 8px;
         }
-        
+
         .socials a:hover .icon-wrapper {
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
             transform: scale(1.1);
         }
-        
+
         .socials a.whatsapp:hover .icon-wrapper {
             background-color: #25D366;
             color: #fff;
         }
-        
+
         .socials a.telegram:hover .icon-wrapper {
             background-color: #0088cc;
             color: #fff;
         }
-        
+
         .socials a.facebook:hover .icon-wrapper {
             background-color: #3b5998;
             color: #fff;
         }
-        
+
         .socials a.instagram:hover .icon-wrapper {
             background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
             color: #fff;
         }
-        
+
         .socials a span {
             font-size: 0.9em;
             color: var(--muted);
             transition: color 0.3s ease;
         }
-        
+
         .socials a:hover span {
             color: var(--text);
         }
-        
+
         .map iframe {
             width: 100%;
             height: 300px;
@@ -623,8 +632,9 @@
             margin-top: 2rem;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
+
         /* Footer */
-        
+
         footer {
             background: #1e293b;
             color: #e2e8f0;
@@ -632,18 +642,19 @@
             text-align: center;
             font-size: 0.875rem;
         }
-        
+
         footer a {
             color: #fff;
             margin: 0 6px;
             transition: color 0.3s;
         }
-        
+
         footer a:hover {
             color: var(--secondary);
         }
+
         /* Responsive */
-        
+
         @media (min-width: 768px) {
             .hero {
                 flex-direction: row;
@@ -672,7 +683,7 @@
                 align-items: flex-start;
             }
         }
-        
+
         @media (max-width: 767px) {
             header nav {
                 display: none;
@@ -684,18 +695,18 @@
                 padding: 3rem 1rem;
             }
         }
-        
+
         header .brand:hover {
             cursor: pointer;
         }
-        
+
         header .brand:hover strong {
             color: var(--primary);
             transform: translateY(2px);
             /* تحريك النص قليلاً لأسفل */
             transition: all 0.3s ease;
         }
-        
+
         .hero-text .btn:hover {
             background-color: #0088cc;
             /* لون تيليجرام */
@@ -705,7 +716,7 @@
             animation: pulse-telegram 1.5s infinite;
             /* تطبيق التأثير النبضي */
         }
-        
+
         @keyframes pulse-telegram {
             0% {
                 transform: scale(1.05);
@@ -718,8 +729,9 @@
                 transform: scale(1.05);
             }
         }
+
         /* Container for the 3D flip effect */
-        
+
         .hero-img-container {
             perspective: 1000px;
             /* Specifies the perspective for the 3D space */
@@ -730,8 +742,9 @@
             animation: slideIn 1s ease-in-out;
             /* Keep original animation */
         }
+
         /* The card itself, responsible for flipping */
-        
+
         .hero-img-card {
             position: relative;
             width: 100%;
@@ -746,13 +759,15 @@
             border-radius: var(--radius);
             /* Apply border-radius to the card */
         }
+
         /* On hover, flip the card */
-        
+
         .hero-img-container:hover .hero-img-card {
             transform: rotateY(180deg);
         }
+
         /* Common styles for front and back faces */
-        
+
         .hero-img-front,
         .hero-img-back {
             position: absolute;
@@ -765,7 +780,7 @@
             overflow: hidden;
             /* Ensure image/content stays within rounded corners */
         }
-        
+
         .hero-img-front img {
             width: 100%;
             height: 100%;
@@ -773,7 +788,7 @@
             /* Cover the entire area */
             border-radius: var(--radius);
         }
-        
+
         .hero-img-back {
             background-color: var(--card);
             /* Background for the back face */
@@ -788,19 +803,19 @@
             box-sizing: border-box;
             /* Include padding in height calculation */
         }
-        
+
         .hero-img-back h3 {
             margin-top: 0;
             font-size: 1.8rem;
             color: var(--primary);
         }
-        
+
         .hero-img-back p {
             font-size: 1.1rem;
             color: var(--muted);
             margin-bottom: 1.5rem;
         }
-        
+
         .hero-img-back .btn-small {
             background: var(--primary);
             color: #fff;
@@ -809,19 +824,20 @@
             font-weight: 600;
             transition: background 0.3s ease;
         }
-        
+
         .hero-img-back .btn-small:hover {
             background: var(--secondary);
         }
+
         /* Adjustments for responsiveness if needed */
-        
+
         @media (max-width: 767px) {
             .hero-img-container {
                 height: 250px;
                 /* Smaller height for mobile */
             }
         }
-        
+
         .contact-card {
             background-color: #23272a;
             /* لون بطاقة الدفع أغمق قليلاً */
@@ -837,7 +853,7 @@
             /* يجعلها بالمنتصف */
             box-sizing: border-box;
         }
-        
+
         .contact-card h4 {
             margin-top: 0;
             margin-bottom: 25px;
@@ -847,15 +863,16 @@
             /* خط فاصل تحت العنوان */
             padding-bottom: 15px;
         }
+
         /* تنسيقات طرق الدفع */
-        
+
         .payment-methods {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             /* عمودين متساويين */
             gap: 20px;
         }
-        
+
         .payment-methods a {
             text-decoration: none;
             color: #ffffff;
@@ -870,7 +887,7 @@
             /* لون خلفية الأيقونة */
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
-        
+
         .icon-wrapper {
             width: 50px;
             height: 50px;
@@ -881,45 +898,48 @@
             margin-bottom: 10px;
             transition: background-color 0.3s ease;
         }
-        
+
         .payment-methods a i {
             font-size: 24px;
             color: #ffffff;
         }
-        
+
         .payment-methods a span {
             font-size: 14px;
             font-weight: bold;
         }
+
         /* تأثير الـ Hover */
-        
+
         .payment-methods a:hover {
             transform: translateY(-5px);
             background-color: #3b4045;
         }
+
         /* تنسيقات الألوان المخصصة */
-        
+
         .mastercard .icon-wrapper {
             background-color: #ff6f00;
             /* لون ماستر كارد */
         }
-        
+
         .zaincash .icon-wrapper {
             background-color: #1a7e44;
             /* لون زين كاش */
         }
-        
+
         .asiacell .icon-wrapper {
             background-color: #e92323;
             /* لون اسياسيل */
         }
-        
+
         .atheer .icon-wrapper {
             background-color: #551a8b;
             /* لون اثير */
         }
+
         /* تنسيقات الأجهزة الصغيرة */
-        
+
         @media (max-width: 480px) {
             .contact-card {
                 padding: 20px;
@@ -940,8 +960,9 @@
                 margin-bottom: 0;
             }
         }
+
         /* تنسيقات القائمة */
-        
+
         .flex {
             display: flex;
             justify-content: center;
@@ -950,41 +971,98 @@
             padding: 0;
             margin: 0;
         }
-        
+
         .space-x-6>*+* {
             margin-left: 1.5rem;
             /* 24px */
         }
-        
+
         .space-x-reverse>*+* {
             margin-right: 1.5rem;
             /* 24px */
             margin-left: 0;
         }
-        
+
         .font-medium {
             font-weight: 500;
         }
-        
+
         a {
             text-decoration: none;
             color: #b0b0b0;
             /* لون رمادي فاتح للنصوص */
             transition: color 0.3s ease;
         }
-        
+
         a:hover {
             color: #7289da;
             /* لون أزرق عند التحويم */
         }
+
         /* تنسيقات الأجهزة الصغيرة */
-        
+
         @media (max-width: 768px) {
             .md\\:mt-0 {
                 margin-top: 0;
             }
             .md\\:space-x-6>*+* {
                 margin-left: 1.5rem;
+            }
+        }
+
+        /* تنسيقات القائمة المنسدلة الجديدة */
+        .menu-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text);
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -250px;
+            width: 250px;
+            height: 100%;
+            background: var(--card);
+            padding: 2rem 1rem;
+            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+            transition: right 0.4s ease-in-out;
+            z-index: 20;
+        }
+
+        .mobile-menu.open {
+            right: 0;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mobile-menu li {
+            margin-bottom: 1.5rem;
+        }
+
+        .mobile-menu a {
+            font-size: 1.2rem;
+            color: var(--text);
+            display: block;
+            padding: 0.5rem;
+            transition: color 0.3s;
+        }
+
+        .mobile-menu a:hover {
+            color: var(--primary);
+        }
+
+        @media (max-width: 767px) {
+            .menu-toggle {
+                display: block;
+            }
+            header ul.flex {
+                display: none;
             }
         }
     </style>
@@ -994,7 +1072,7 @@
     <header>
         <div class="brand">
             <img src="tokay.jpg" alt="logo">
-            <strong>  الوكيل تقـ𓃮ـي</strong>
+            <strong> الوكيل تقـ𓃮ـي</strong>
         </div>
         <div class="text-3xl font-extrabold text-blue-700">
         </div>
@@ -1006,7 +1084,22 @@
                 <li><a href="#payment">طرق الدفع</a></li>
                 <li><a href="#contact">تواصل معي</a></li>
             </ul>
+        </ul>
+
+        <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </header>
+
+    <nav class="mobile-menu">
+        <ul>
+            <li><a href="#about">انا</a></li>
+            <li><a href="#services">الخدمات</a></li>
+            <li><a href="#articles">المقالات</a></li>
+            <li><a href="#payment">طرق الدفع</a></li>
+            <li><a href="#contact">تواصل معي</a></li>
+        </ul>
+    </nav>
     <main>
         <section class="hero">
             <div class="hero-text">
@@ -1032,8 +1125,7 @@
             <div class="container">
                 <h3><i class="fa-solid fa-user"></i> من أنا</h3>
 
-                <p><i class="fa-solid fa-star"></i> أنا الوكيل <span class="highlight">تقـ𓃮ـي</span>، المعتمد في <strong>متجر السلطان الاستثماري</strong>! مهمتي هي تزويدكم بأفضل الفرص لزيادة أرباحكم من خلال بيع النقاط وتفعيل العدادات للمستثمرين، بالإضافة
-                    إلى تنظيم مسابقات حماسية عبر البوت.</p>
+                <p><i class="fa-solid fa-star"></i> أنا الوكيل <span class="highlight">تقـ𓃮ـي</span>، المعتمد في <strong>متجر السلطان الاستثماري</strong>! مهمتي هي تزويدكم بأفضل الفرص لزيادة أرباحكم من خلال بيع النقاط وتفعيل العدادات للمستثمرين، بالإضافة إلى تنظيم مسابقات حماسية عبر البوت.</p>
 
                 <p><i class="fa-solid fa-clock"></i> أنا معكم <strong>24/7</strong> لخدمتكم!</p>
 
@@ -1105,36 +1197,36 @@
              
         </section>
 
-       <section id="payment">
-  <div class="contact-card">
-        <h4>طرق الدفع</h4>
-        <div class="payment-methods">
-            <a href="https://t.me/FB_IT" class="mastercard">
-                <div class="icon-wrapper">
-                    <i class="fa-brands fa-cc-mastercard"></i>
-                </div>
-                <span>ماستر كارد</span>
-            </a>
-                                <a href="https://t.me/FB_IT" class="zaincash">
-                                    <div class="icon-wrapper">
-                                        <i class="fa-solid fa-wallet"></i>
-                                    </div>
-                                    <span>زين كاش</span>
-                                </a>
-                                <a href="https://t.me/FB_IT" class="asiacell">
-                                    <div class="icon-wrapper">
-                                        <i class="fa-solid fa-mobile-screen"></i>
-                                    </div>
-                                    <span>رصيد اسياسيل</span>
-                                </a>
-                                <a href="https://t.me/FB_IT" class="atheer">
-                                    <div class="icon-wrapper">
-                                        <i class="fa-solid fa-mobile-screen-button"></i>
-                                    </div>
-                                    <span>رصيد اثير</span>
-                                </a>
-                            </div>
+        <section id="payment">
+            <div class="contact-card">
+                <h4>طرق الدفع</h4>
+                <div class="payment-methods">
+                    <a href="https://t.me/FB_IT" class="mastercard">
+                        <div class="icon-wrapper">
+                            <i class="fa-brands fa-cc-mastercard"></i>
                         </div>
+                        <span>ماستر كارد</span>
+                    </a>
+                    <a href="https://t.me/FB_IT" class="zaincash">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+                        <span>زين كاش</span>
+                    </a>
+                    <a href="https://t.me/FB_IT" class="asiacell">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+                        <span>رصيد اسياسيل</span>
+                    </a>
+                    <a href="https://t.me/FB_IT" class="atheer">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <span>رصيد اثير</span>
+                    </a>
+                </div>
+            </div>
         </section>
         <section id="contact">
             <div class="container">
@@ -1175,6 +1267,16 @@
             </p>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const mobileMenu = document.querySelector('.mobile-menu');
+
+            menuToggle.addEventListener('click', () => {
+                mobileMenu.classList.toggle('open');
+            });
+        });
+    </script>
 </body>
 
 </html>
