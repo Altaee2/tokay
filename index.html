@@ -349,45 +349,36 @@
             margin-bottom: 1rem;
         }
         
+        .article-card2 img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+        }
+        
         .article-card h3 {
             margin-top: 0;
             font-size: 1.25rem;
             color: #f8ff00;
         }
         
-        .article-card h33 {
+        .article-card2 h2 {
             margin-top: 0;
-            font-size: 1.5rem;
-            color: #297b53;
-        }
-        
-        section h33::after {
-            content: '';
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            bottom: 0;
-            width: 180px;
-            height: 3px;
-            background: var(--secondary);
-            border-radius: 5px;
-        }
-        
-        section h33 {
-            font-size: clamp(1.75rem, 4vw, 2.5rem);
-            margin-bottom: 20px;
-            color: #000000;
-            position: relative;
-            padding-bottom: 10px;
-            display: inline-block;
+            font-size: 1.25rem;
+            color: #60d89e;
         }
         
         .article-card p {
             color: white;
         }
         
+        .article-card2 p {
+            color: white;
+        }
+        
         .article-card a {
-            color: blue;
+            color: BLACK;
             font-size: 16px;
             transition: background-color 0.4s ease, transform 0.4s ease;
             font-weight: 600;
@@ -403,8 +394,34 @@
             /* لون زر اقرأ المزيد */
         }
         
+        .article-card2 a {
+            color: rgb(242, 242, 242);
+            font-size: 16px;
+            transition: background-color 0.4s ease, transform 0.4s ease;
+            font-weight: 600;
+            font-weight: bold;
+            padding: 12px 25px;
+            margin-top: 2rem;
+            text-decoration: none;
+            /* إزالة الخط تحت الرابط */
+            border-radius: 50px;
+            /* حواف مستديرة للزر */
+            display: inline-block;
+            background-color: #60d89e;
+            /* لون زر اقرأ المزيد */
+        }
+        
         .article-card a:hover {
             background-color: #00060c;
+            color: #f8ff00;
+            /* يتغير لون الزر عند الهوفر */
+            transform: scale(1.05);
+            /* الزر يكبر قليلاً */
+        }
+        
+        .article-card2 a:hover {
+            background-color: #ffffff;
+            color: #60d89e;
             /* يتغير لون الزر عند الهوفر */
             transform: scale(1.05);
             /* الزر يكبر قليلاً */
@@ -417,31 +434,6 @@
             border-radius: var(--radius);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             animation: scaleIn 0.5s ease-out;
-        }
-        
-        .article-card a1 {
-            color: #297b53;
-            font-size: 16px;
-            transition: background-color 0.4s ease, transform 0.4s ease;
-            font-weight: 600;
-            font-weight: bold;
-            padding: 12px 25px;
-            margin-top: 2rem;
-            text-decoration: none;
-            /* إزالة الخط تحت الرابط */
-            border-radius: 50px;
-            /* حواف مستديرة للزر */
-            display: inline-block;
-            background-color: #f8ff00;
-            /* لون زر اقرأ المزيد */
-        }
-        
-        .article-card a1:hover {
-            color: #f8ff00;
-            background-color: #297b53;
-            /* يتغير لون الزر عند الهوفر */
-            transform: scale(1.05);
-            /* الزر يكبر قليلاً */
         }
         /* Portfolio/Works */
         
@@ -1059,8 +1051,8 @@
                 <li><a href="#about">انا</a></li>
                 <li><a href="#services">الخدمات</a></li>
                 <li><a href="#payment">طرق الدفع</a></li>
-                <li><a href="#channel">قناة الوكيل</a></li>
-                <li><a href="#serag">مكتبة السراج</a></li>
+                <li><a href="#articles">قناة الوكيل</a></li>
+                <li><a href="#articles">مكتبة السراج</a></li>
                 <li><a href="#contact">تواصل معي</a></li>
             </ul>
         </ul>
@@ -1075,8 +1067,8 @@
             <li><a href="#about">انا</a></li>
             <li><a href="#services">الخدمات</a></li>
             <li><a href="#payment">طرق الدفع</a></li>
-            <li><a href="#channel">قناة الوكيل</a></li>
-            <li><a href="#serag">مكتبة السراج</a></li>
+            <li><a href="#articles">قناة الوكيل</a></li>
+            <li><a href="#articles">مكتبة السراج</a></li>
             <li><a href="#contact">تواصل معي</a></li>
         </ul>
     </nav>
@@ -1144,43 +1136,24 @@
             <div class="container">
                 <h2>مقالات مفيدة</h2>
                 <div class="articles">
-                    <section id="channel">
-                        <div class="card article-card">
-                            <img src="tokay3.png" alt="Article1">
-                            <h3>قناة الوكيل تقـ𓃮ـي</h3>
-                            <p>"قناة الوكيل تقـ𓃮ـي" تقدم لك فرص استثمارية مميزة عبر شراء النقاط الساتوشي واستخدامها لتفعيل العدادات وزيادة الدخل بطريقة آمنة.</p>
-                            <a href="channel.html">اقرأ المزيد</a>
-                        </div>
-                    </section>
-                    <section id="serag">
-                        <div class="card article-card">
-                            <img src="serag1.png" alt="Article 2" class="card-image" />
-                            <div class="card-content">
-                                <h3>قناه مكتبة السراج</h3>
-                                <p>
-                                    قناه مكتبه السراج توفر مستلزمات قرطاسية عالية الجودة تلبي احتياجاتك الدراسية والمهنية بكل احترافية.
-                                </p>
-                                <div style="text-align: center; margin-top: 2rem;">
-                                    <a href="serag.html" style="
-          color: black;
-          font-size: 16px;
-          transition: background-color 0.4s ease, transform 0.4s ease;
-          font-weight: 600;
-          font-weight: bold;
-          padding: 12px 25px;
-          text-decoration: none;
-          border-radius: 50px;
-          display: inline-block;
-          background-color: #297b53;
-        ">اقرأ المزيد</a
-      >
-    </div>
-  </div>
-</div>
-</div>
-             </section>
-        </section>
 
+                    <div class="card article-card">
+                        <img src="tokay3.png" alt="Article1">
+                        <h3>قناة الوكيل تقـ𓃮ـي</h3>
+                        <p>"قناة الوكيل تقـ𓃮ـي" تقدم لك فرص استثمارية مميزة عبر شراء النقاط الساتوشي واستخدامها لتفعيل العدادات وزيادة الدخل بطريقة آمنة.</p>
+                        <a href="channel.html">اقرأ المزيد</a>
+                    </div>
+                    <div class="card article-card2">
+                        <img src="serag1.png" alt="Article1">
+                        <h2>قناة مكتبة السراج </h2>
+                        <p>
+                            قناة مكتبه السراج توفر مستلزمات قرطاسية عالية الجودة تلبي احتياجاتك الدراسية والمهنية بكل احترافية.
+                        </p>
+                        <a href="serag.html">اقرأ المزيد</a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="payment">
             <div class="contact-card">
                 <h4>طرق الدفع</h4>
@@ -1191,59 +1164,86 @@
                         </div>
                         <span>ماستر كارد</span>
                     </a>
-                                    <a href="https://t.me/FB_IT" class="zaincash">
-                                        <div class="icon-wrapper">
-                                            <i class="fa-solid fa-wallet"></i>
-                                        </div>
-                                        <span>زين كاش</span>
-                                    </a>
-                                    <a href="https://t.me/FB_IT" class="asiacell">
-                                        <div class="icon-wrapper">
-                                            <i class="fa-solid fa-mobile-screen"></i>
-                                        </div>
-                                        <span>رصيد اسياسيل</span>
-                                    </a>
-                                    <a href="https://t.me/FB_IT" class="atheer">
-                                        <div class="icon-wrapper">
-                                            <i class="fa-solid fa-mobile-screen-button"></i>
-                                        </div>
-                                        <span>رصيد اثير</span>
-                                    </a>
-                                </div>
-                            </div>
-                    </section>
-                    <section id="contact">
-                        <div class="container">
-                            <h2>تواصل معنا</h2>
-                            <div class="contact-info">
-                                <div class="contact-card">
-                                    <h4>مواقع التواصل</h4>
-                                    <div class="socials">
-
-                                        <a href="https://t.me/FB_IT" target="_blank" class="telegram">
-                                            <div class="icon-wrapper">
-                                                <i class="fa-brands fa-telegram"></i>
-                                            </div>
-                                            <span>تليجرام شخصي</span>
-                                        </a>
-                                        <a href="https://t.me/ssooci" target="_blank" class="telegram">
-                                            <div class="icon-wrapper">
-                                                <i class="fa-brands fa-telegram"></i>
-                                            </div>
-                                            <span> مكتبة السراج</span>
-                                        </a>
-                                        <a href="https://www.instagram.com/s.ooci?igsh=MXVrMXI4NXB5aGpiZA==" target="_blank" class="instagram">
-                                            <div class="icon-wrapper">
-                                                <i class="fa-brands fa-instagram"></i>
-                                            </div>
-                                            <span>مكتبة السراج</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
+                    <a href="https://t.me/FB_IT" class="zaincash">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-wallet"></i>
                         </div>
-                    </section>
+                        <span>زين كاش</span>
+                    </a>
+                    <a href="https://t.me/FB_IT" class="asiacell">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+                        <span>رصيد اسياسيل</span>
+                    </a>
+                    <a href="https://t.me/FB_IT" class="atheer">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <span>رصيد اثير</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>تواصل معنا</h2>
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h4>مواقع تواصل تقـ𓃮ـي</h4>
+                        <div class="socials">
+
+                            <a href="https://t.me/FB_IT" target="_blank" class="telegram">
+                                <div class="icon-wrapper">
+                                    <i class="fa-brands fa-telegram"></i>
+                                </div>
+                                <span>التيليجرام </span>
+                            </a>
+                            <a href="https://www.instagram.com/p.o.u.s?igsh=MTN2d3FpejZjemVzNg==" target="_blank" class="instagram">
+                                <div class="icon-wrapper">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                                <span>الانستغرام</span>
+                            </a>
+                            <a href="https://wa.me/+9647875290026" target="_blank" class="whatsapp">
+                                <div class="icon-wrapper">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                <span>الواتسآب</span>
+                            </a>
+                        </div>
+                        <p></p>
+                        <h4>مواقع تواصل مكتبة السراج</h4>
+                        <div class="socials">
+
+
+                            <a href="https://t.me/ssooci" target="_blank" class="telegram">
+                                <div class="icon-wrapper">
+                                    <i class="fa-brands fa-telegram"></i>
+                                </div>
+                                <span> التيليجرام</span>
+                            </a>
+                            <a href="https://www.instagram.com/s.ooci?igsh=MXVrMXI4NXB5aGpiZA==" target="_blank" class="instagram">
+                                <div class="icon-wrapper">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                                <span> الانستغرام</span>
+                            </a>
+                            <a href="https://wa.me/9647778696586" target="_blank" class="whatsapp">
+                                <div class="icon-wrapper">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                <span>الواتسآب</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+        </section>
     </main>
     <footer>
         <div class="container">
